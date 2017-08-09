@@ -11,14 +11,16 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-          Movies
-          <br />
-          Are
-          <br />
-          Memories
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+           <br />
+            Movies
+           <br />
+            Are
+           <br />
+            Memories
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Splurting iconic movie lines since the age of dinosaurs.
@@ -41,7 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote_path' %>
           </div>
           <div class="col-6 footer-blurb">
             Application created during coding bootcamp at <a href="http://thefirehoseproject.com">The Firehose Project</a><br />
