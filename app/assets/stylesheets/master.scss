@@ -1,10 +1,13 @@
-
 @import "bootstrap";
 
 @media (max-width: 750px) {
   .footer-blurb {
     text-align: left;
   }
+}
+
+@-ms-viewport {
+  width: device-width;
 }
 
 .about {
